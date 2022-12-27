@@ -1,0 +1,94 @@
+.btn1 {
+  background: #4c6ca0;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+.btn2 {
+  background: #cfb311;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+.btn1:hover {
+  color: #f4f4f4;
+  background: #446190;
+}
+
+.btn2:hover {
+  color: #f4f4f4;
+  background: #97951e;
+}
+
+.btn3 {
+  background: #189914;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+.btn4 {
+  background: #f53770;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+.btn3:hover {
+  color: #f4f4f4;
+  background: #177517;
+}
+.btn4:hover {
+  color: #f4f4f4;
+  background: #991e1e;
+}
+.btn5 {
+  background: white;
+  color: rgb(0, 0, 0);
+  border: solid #f53770;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+.btn6 {
+  background: white;
+  color: rgb(0, 0, 0);
+  border: solid violet;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+.btn5:hover {
+  background: #f53770;
+}
+.btn6:hover {
+  background: violet;
+}
+.btn7 {
+  background: white;
+  color: rgb(0, 0, 0);
+  border: solid #918f17;
+  border-radius: 30px;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+.btn8 {
+  background: white;
+  color: rgb(0, 0, 0);
+  border: solid cyan;
+  border-radius: 30px;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+.btn7:hover {
+  background: #918f17;
+}
+.btn8:hover {
+  background: cyan;
+}
