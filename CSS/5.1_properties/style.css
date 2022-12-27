@@ -1,0 +1,18 @@
+#helloworld1 {
+  border-color: red;
+  border-style: solid;
+  border-radius: 600px;
+  border-width: thin;
+  font-size: larger;
+}
+
+#helloworld2 {
+  font-weight: bold;
+  font-style: italic;
+}
+
+#helloworld3 {
+  background-color: black;
+  color: white;
+  font-family: monospace;
+}
