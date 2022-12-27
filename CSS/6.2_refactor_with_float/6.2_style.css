@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Rubik:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+}
 .container {
+  max-width: 1000px;
+}
+
+.box1 {
   font-family: Roboto;
   text-align: center;
   color: #fff;
@@ -7,5 +15,5 @@
   box-shadow: 3px 3px 10px 5px rgb(128, 51, 190);
   padding: 20px;
   width: 500px;
-  margin: auto;
+  float: right;
 }
