@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Rubik:wght@300&display=swap");
+.container {
+  font-family: Roboto;
+  text-align: center;
+  color: #fff;
+  background-color: rgb(194, 129, 255);
+  box-shadow: 3px 3px 10px 5px rgb(128, 51, 190);
+  padding: 10px;
+  width: 500px;
+  margin: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
