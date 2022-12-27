@@ -1,0 +1,11 @@
+.container {
+  margin: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(255, 235, 147);
+  width: 520px;
+  padding: 10px;
+  box-shadow: 3px 3px 10px 1px rgb(66, 68, 64);
+}
+.image {
+  width: 520px;
+}
