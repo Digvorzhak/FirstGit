@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>11.5_flex_nav</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      #navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background: #e61766;
+        border: 2px solid #f4f4f4;
+        color: #f4f4f4;
+        height: 70px;
+        width: 100%;
+      }
+      #navbar ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        margin: 0px 50px;
+        padding-top: 20px;
+      }
+
+      #navbar ul li {
+        margin: 0px 30px;
+      }
+
+      a {
+        text-decoration: none;
+        color: #f4f4f4;
+      }
+      #navbar h1 {
+        padding-top: 10px;
+        margin-left: 10px;
+      }
+
+      @media (max-width: 600px) {
+        #navbar {
+          display: block;
+          border: solid 3px #f4f4f4;
+          background: #f4f4f4;
+        }
+
+        #navbar h1 {
+          text-align: center;
+          font-size: 3rem;
+          color: #0f4059;
+        }
+        #navbar ul {
+          display: block;
+          position: fixed;
+          width: 100%;
+          height: 100%;
+          background: #f4f4f4;
+          top: 80px;
+          left: 0;
+          text-align: center;
+        }
+        #navbar ul li a {
+          font-size: 1.5rem;
+          color: #0f4059;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+      <h1 id="heading">APPLESEEDS</h1>
+      <ul>
+        <li><a href="">HOME</a></li>
+        <li><a href="">ABOUT</a></li>
+        <li><a href="">PORTFOLIO</a></li>
+        <li><a href="">CONTACT</a></li>
+      </ul>
+    </div>
+  </body>
+</html>

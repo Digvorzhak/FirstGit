@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>11.5_flex_nav</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      #container {
+        max-width: 100vw;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        background: #d1e617;
+        border: 2px solid #f4f4f4;
+        color: #000000;
+        height: 100%
+
+      }
+      #navbar {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        background: #d1e617;
+        border: 2px solid #f4f4f4;
+        color: #000000;
+        height: 100%
+        width: 100%;
+      }
+      #navbar ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        margin: 0px 50px;
+        padding-top: 20px;
+      }
+
+      #navbar ul li {
+        margin: 0px 30px;
+      }
+
+      a {
+        text-decoration: none;
+        color: #000000;
+      }
+      #navbar h1 {
+        padding-top: 10px;
+        margin-left: 10px;
+      }
+
+      @media (max-width: 300px) {
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="navbar">
+        <h1 id="heading">APPLESEEDS</h1>
+        <ul>
+          <li><a href="">HOME</a></li>
+          <li><a href="">ABOUT</a></li>
+          <li><a href="">PORTFOLIO</a></li>
+          <li><a href="">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
