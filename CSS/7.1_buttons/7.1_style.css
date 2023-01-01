@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  background: #f3f;
+}
+
 .btn1 {
   background: #4c6ca0;
   color: #fff;
@@ -53,10 +58,15 @@
 .btn5 {
   background: white;
   color: rgb(0, 0, 0);
-  border: solid #f53770;
+  /* border: solid #f53770; */
   font-size: 16px;
   padding: 10px 20px;
 }
+
+.btn5 a {
+  text-decoration: none;
+}
+
 .btn6 {
   background: white;
   color: rgb(0, 0, 0);
@@ -91,4 +101,24 @@
 }
 .btn8:hover {
   background: cyan;
+}
+
+.btn9 {
+  width: 204px;
+  height: 40px;
+  background: transparent;
+  border-width: 3px;
+  border-style: solid;
+  border-color: rgb(255, 255, 255);
+  border-image: initial;
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 4px 24px;
+  margin: 0px 0px 0px 8px;
+}
+
+.btn9 a {
+  text-decoration: none;
+  background: none;
+  background-color: transparent;
 }

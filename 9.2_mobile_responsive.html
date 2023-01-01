@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>9.2_mobile_responsive</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.4em;
+      }
+
+      #container {
+        width: 960px;
+        margin: auto;
+      }
+      .box {
+        width: 200px;
+        display: inline-block;
+        box-sizing: border-box;
+        background: #f4f4f4;
+        border: 1px solid #333;
+        padding: 20px;
+        margin-bottom: 15px;
+      }
+
+      .box p {
+        /* text-align: justify; */
+      }
+
+      @media (max-width: 500px) {
+        #container {
+          max-width: 400px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="box-1" class="box">
+        <h2>First Item</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla nemo quas repellendus at neque pariatur sed quae? Iste, qui eum.</p>
+      </div>
+      <div id="box-2" class="box">
+        <h2>Second Item</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla nemo quas repellendus at neque pariatur sed quae? Iste, qui eum.</p>
+      </div>
+      <div id="box-3" class="box">
+        <h2>Third Item</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla nemo quas repellendus at neque pariatur sed quae? Iste, qui eum.</p>
+      </div>
+      <div id="box-4" class="box">
+        <h2>Fourth Item</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla nemo quas repellendus at neque pariatur sed quae? Iste, qui eum.</p>
+      </div>
+    </div>
+  </body>
+</html>
