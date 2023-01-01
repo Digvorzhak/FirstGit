@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>10.1</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+      }
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      header {
+        background-color: aliceblue;
+        color: #6510d4;
+        padding: 2rem;
+        text-align: center;
+        height: 100vh;
+        font-size: 1rem;
+      }
+
+      @media (max-width: 300px), (max-height: 300px) {
+        header {
+          font-size: 0.7rem;
+        }
+      }
+
+      @media (min-width: 1000px) and (min-height: 1000px) {
+        header {
+          font-size: 1.3rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Our Website</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, pariatur!</p>
+    </header>
+  </body>
+</html>
