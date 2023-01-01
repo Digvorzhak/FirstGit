@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>11.2_flex_basics</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      #container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        height: 100vh;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        /* padding: 30px; */
+        border-radius: 10px;
+      }
+
+      #box1 {
+        background: green;
+      }
+      #box2 {
+        background: blue;
+      }
+      #box3 {
+        background: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="box1" class="box">1</div>
+      <div id="box2" class="box">2</div>
+      <div id="box3" class="box">3</div>
+    </div>
+  </body>
+</html>
