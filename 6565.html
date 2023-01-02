@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        width: 1100px;
+        height: 700px;
+        margin: auto;
+        position: relative;
+      }
+
+      .box1 {
+        border: 5px rgb(0, 0, 0) solid;
+        width: 900px;
+        height: 500px;
+        position: absolute;
+        background: black;
+      }
+
+      .box2 {
+        border: 5px rgb(255, 10, 10) solid;
+        width: 650px;
+        height: 250px;
+        position: absolute;
+        top: 75px;
+        left: 155px;
+        background: black;
+      }
+
+      .box1::after {
+        content: "";
+        width: 750px;
+        height: 150px;
+        position: absolute;
+        border: rgb(0, 0, 0) 5px solid;
+        background: black;
+        top: 110px;
+        right: 50px;
+        z-index: 1;
+      }
+
+      .box2::before {
+        content: "";
+        width: 550px;
+        height: 350px;
+        position: absolute;
+        border: rgb(0, 0, 0) 5px solid;
+        background: black;
+        top: -50px;
+        left: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box1"></div>
+      <div class="box2"></div>
+    </div>
+  </body>
+</html>

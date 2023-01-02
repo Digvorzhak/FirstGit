@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>12.4_cool_border.html</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: rgb(0, 0, 0);
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+      }
+
+      .card {
+        display: flex;
+        width: 1200px;
+        height: 700px;
+        background-color: #000;
+        position: relative;
+        cursor: pointer;
+        justify-content: space-between;
+        align-items: center;
+        border: red 5px solid;
+        border-radius: 0px;
+      }
+
+      .card ::after {
+        content: "";
+        /* position: absolute; */
+        /* width: 100%;
+        height: 100%; */
+        top: 0px;
+        left: 0px;
+      }
+
+      .topbottom {
+        position: absolute;
+        height: 500px;
+        width: 1300px;
+
+        background: rgb(0, 0, 0);
+        /* border: black 30px solid; */
+      }
+
+      .leftright {
+        position: absolute;
+        height: 800px;
+        width: 1000px;
+
+        background: rgb(0, 0, 0);
+        /* border: black 30px solid; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card"></div>
+      <div id="border" class="topbottom"></div>
+      <div id="border" class="leftright"></div>
+    </div>
+  </body>
+</html>
