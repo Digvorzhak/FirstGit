@@ -6,18 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>12.5_tooltip</title>
     <style>
-      a {
-        text-decoration: none;
+      p {
+        width: 100%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+        background-color: white;
+        padding: 3.5em;
+        text-align: center;
+        font-size: 1rem;
       }
-      a:after:hover {
+
+      a {
+        position: relative;
+        color: orange;
+        font-size: inherit;
+      }
+      a::after {
+        position: absolute;
+        width: 12em;
+        background-color: #3765ff;
         content: attr(data-tooltip);
+        padding: 0.6em 0;
+        color: white;
+        margin: auto;
+        left: -4.5em;
+        right: 0;
+        bottom: 1.5em;
+        text-align: center;
+        border-radius: 1px;
+      }
+      a::before {
+        position: absolute;
+        content: "";
+        height: 0;
+        width: 0;
+        border-top: 1px solid #3765ff;
+        border-left: 1px solid transparent #3765ff;
+        border-right: 1px solid transparent #3765ff;
+        margin: auto;
+        left: 0;
+        right: 0;
+        bottom: 1em;
+      }
+      a::before,
+      a::after {
+        display: none;
+      }
+      a:hover::before,
+      a:hover::after {
+        display: block;
       }
     </style>
   </head>
   <body>
     <div class="box1">
       <p>Please visit this <a href="https://appleseeds.org.il/" target="_blank">website</a> for more information</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quis quod modi sed cum natus suscipit incidunt consequatur accusamus cupiditate quasi, eligendi odit expedita laborum dolore molestiae libero facilis <a href="#" data-tooltip="value">reiciendis</a> recusandae. Porro natus fugit molestiae reprehenderit ut fuga sint. Placeat illum veritatis eos reiciendis at fugiat sapiente temporibus quis voluptates!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quis quod modi sed cum natus suscipit incidunt consequatur accusamus cupiditate quasi, eligendi odit expedita laborum dolore molestiae libero facilis <a href="#" data-tooltip="This is a badass tool tip">reiciendis</a> recusandae. Porro natus fugit molestiae reprehenderit ut fuga sint. Placeat illum veritatis eos reiciendis at fugiat sapiente temporibus quis voluptates!</p>
     </div>
   </body>
 </html>
