@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>12.2_box_color</title>
+    <title>12.3_box_hover</title>
     <style>
       * {
         box-sizing: border-box;
@@ -31,6 +31,13 @@
         height: 500px;
 
         position: absolute;
+      }
+      .smallbox1:hover::before {
+        content: "";
+        width: 250px;
+        height: 500px;
+        position: absolute;
+        background: rgb(43, 226, 89);
       }
     </style>
   </head>
