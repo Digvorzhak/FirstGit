@@ -24,7 +24,7 @@
         position: relative;
       }
 
-      .smallbox1 ::before {
+      .smallbox1::before {
         content: "";
         background: red;
         width: 250px;
@@ -32,11 +32,20 @@
 
         position: absolute;
       }
+      .smallbox1:hover::before {
+        content: "";
+        width: 250px;
+        height: 500px;
+        position: absolute;
+        background: rgb(43, 226, 89);
+      }
     </style>
   </head>
   <body>
     <div class="box">
-      <div class="smallbox1"><div class="smallbox2"></div></div>
+      <div class="smallbox1">
+        <div class="smallbox2"></div>
+      </div>
     </div>
   </body>
 </html>
