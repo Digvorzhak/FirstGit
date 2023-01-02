@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>12.5_tooltip</title>
+    <style>
+      a {
+        text-decoration: none;
+      }
+      a:after:hover {
+        content: attr(data-tooltip);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">
+      <p>Please visit this <a href="https://appleseeds.org.il/" target="_blank">website</a> for more information</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quis quod modi sed cum natus suscipit incidunt consequatur accusamus cupiditate quasi, eligendi odit expedita laborum dolore molestiae libero facilis <a href="#" data-tooltip="value">reiciendis</a> recusandae. Porro natus fugit molestiae reprehenderit ut fuga sint. Placeat illum veritatis eos reiciendis at fugiat sapiente temporibus quis voluptates!</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>12.2_box_color</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+      }
+      .smallbox1 {
+        background: #823b7f;
+        width: 500px;
+        height: 500px;
+        position: relative;
+      }
+
+      .smallbox1 ::before {
+        content: "";
+        background: red;
+        width: 250px;
+        height: 500px;
+
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="smallbox1"><div class="smallbox2"></div></div>
+    </div>
+  </body>
+</html>
