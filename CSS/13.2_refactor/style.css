@@ -1,0 +1,146 @@
+@font-face {
+  font-family: "orion";
+  src: url(/fonts/Orion.ttf);
+}
+
+@font-face {
+  font-family: "orionbold";
+  src: url(/fonts/Orion-Bold.woff);
+}
+
+:root {
+  --gray-color: #f4f4f4c9;
+  --primary-color: #fa3a7a;
+  --light-color: #f4f4f4;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: orionbold;
+}
+
+#navbar {
+  font-family: orionbold;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: var(--primary-color);
+  /* color: var(--light-color); */
+  height: 70px;
+  width: 100%;
+}
+#navbar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0px 50px;
+  padding-top: 20px;
+}
+
+#navbar ul li {
+  margin: 0px 30px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--light-color);
+}
+#navbar h1 {
+  padding-top: 10px;
+  margin-left: 10px;
+}
+
+@media (max-width: 600px) {
+  #navbar {
+    display: block;
+    border: solid 3px var(--gray-color);
+    background: var(--gray-color);
+  }
+
+  #navbar h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #0f4059;
+  }
+  #navbar ul {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: var(--gray-color);
+    top: 80px;
+    left: 0;
+    text-align: center;
+  }
+  #navbar ul li a {
+    font-size: 1.5rem;
+  }
+}
+
+#card {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  background: var(--gray-color);
+}
+
+/* .container {
+  width: 100vw;
+  height: 100vh;
+  background: #f4f4f4c9;
+} */
+
+.homeimg {
+  width: 350px;
+  height: 350px;
+  margin-left: 300px;
+  margin-top: 100px;
+}
+
+.about {
+  width: 200px;
+  margin-left: 60px;
+  margin-bottom: 250px;
+  margin-right: 400px;
+  margin-top: 100px;
+}
+
+.about h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.about p {
+  padding-top: 10px;
+  font-size: 2rem;
+}
+
+.belowinfo {
+  position: absolute;
+  top: 540px;
+  left: 305px;
+  font-size: 2rem;
+}
+.social {
+  position: absolute;
+  top: 420px;
+  left: 700px;
+  width: 200px;
+  height: 200px;
+}
+
+.btn {
+  background: var(--primary-color);
+  color: var(--light-color);
+  border: none;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 5px;
+}
