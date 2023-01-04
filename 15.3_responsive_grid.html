@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>15.3_responsive_grid</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-size: 62.5%;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: 200px 200px 200px 200px;
+        justify-content: center;
+
+        gap: 1rem;
+        grid-template-areas:
+          "header header header header "
+          "side-left main main side-right"
+          "footer footer footer footer";
+      }
+      .grid-item {
+        font-size: 2rem;
+
+        padding: 3rem;
+        border-radius: 30px;
+      }
+      .item1 {
+        background: rgb(50, 228, 219);
+        grid-area: header;
+      }
+      .item2 {
+        background-color: rgb(223, 13, 76);
+        grid-area: side-left;
+      }
+      .item3 {
+        background-color: rgb(221, 204, 46);
+        grid-area: main;
+      }
+      .item4 {
+        background-color: rgb(219, 65, 219);
+        grid-area: side-right;
+      }
+      .item5 {
+        background-color: rgb(219, 65, 219);
+        grid-area: footer;
+      }
+
+      @media (max-width: 500px) {
+        .grid-container {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+
+      @media (max-width: 820px) {
+        .grid-container {
+          justify-content: flex-start;
+          grid-template-areas:
+            "header header header header "
+            "side-left main main main"
+            "side-right side-right side-right side-right"
+            "footer footer footer footer";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item item1">Header</div>
+      <div class="grid-item item2">Sidebar</div>
+      <div class="grid-item item3">
+        <h1>Content</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="grid-item item4">Sidebar 2</div>
+      <div class="grid-item item5">Footer</div>
+    </div>
+  </body>
+</html>
