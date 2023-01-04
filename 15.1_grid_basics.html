@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>15.1_grid_basics</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-size: 62.5%;
+      }
+      .grid-container {
+        display: grid;
+        gap: 1rem;
+        grid-template-areas:
+          "header-left header-left header-right header-right"
+          "side main main main"
+          "footer footer footer footer";
+      }
+      .grid-item {
+        font-size: 2rem;
+        text-align: center;
+        padding: 3rem;
+        border: 3px solid rgb(255, 255, 255);
+        border-radius: 30px;
+        background: lightcoral;
+      }
+      .item1 {
+        background: rgb(50, 228, 219);
+        grid-area: header-left;
+      }
+      .item2 {
+        background-color: rgb(223, 13, 76);
+        grid-area: header-right;
+      }
+      .item3 {
+        background-color: rgb(221, 204, 46);
+        grid-area: side;
+      }
+      .item4 {
+        background-color: rgb(219, 65, 219);
+        grid-area: main;
+      }
+      .item5 {
+        background-color: rgb(216, 80, 46);
+        grid-area: footer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item item1"></div>
+      <div class="grid-item item2"></div>
+      <div class="grid-item item3"></div>
+      <div class="grid-item item4"></div>
+      <div class="grid-item item5"></div>
+    </div>
+  </body>
+</html>
