@@ -23,3 +23,5 @@ console.log(typeof boolean);
 console.log(typeof undefined1);
 console.log(typeof nu);
 console.log(typeof mySymbol);
+
+console.log(typeof "4");
