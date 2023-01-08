@@ -4,9 +4,9 @@ const string = "hi";
 const num = 42;
 const account = {
   password: 1234,
-  name: "Sean",
-  age: 24,
-  email: "shon.h777@gmail.com",
+  name: "Jonas",
+  age: 28,
+  email: "fakemail123@gmail.com",
 };
 const boolean = false;
 
