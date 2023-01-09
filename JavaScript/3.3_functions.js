@@ -1,7 +1,5 @@
 "use strict";
 
-// Task 1
-
 function percentageOfWorld1(population) {
   return (population / 7900) * 100;
 }
