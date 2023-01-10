@@ -15,3 +15,20 @@ const boom = (n) => {
 };
 
 boom(77);
+
+function getCount(str) {
+  let counter = 0;
+  for (let i = 0; i < str.length; i++) {
+    str[i].includes("a") ? counter++ : str[i].includes("e") ? counter++ : str[i].includes("i") ? counter++ : str[i].includes("o") ? counter++ : str[i].includes("u") ? counter++ : counter + 0;
+  }
+  return counter;
+}
+
+console.log(getCount("abracadabra"));
+
+// function fiveOrSeven(num) {
+//   const obj = { 5: 7, 7: 5 };
+//   return obj[num];
+// }
+
+// console.log(fiveOrSeven(7));
