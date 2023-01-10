@@ -12,3 +12,5 @@ const duplicateRemover = (arr) => {
   }
   return uniqueArr;
 };
+
+console.log(duplicateRemover([3, 3, 7, 7, 7, 4, 8, 7]));
