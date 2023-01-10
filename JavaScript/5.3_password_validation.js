@@ -16,5 +16,3 @@ const advancedValidation = (password) => {
   else if (password.length > 7) return "Strong";
   else return "Not bad";
 };
-
-// console.log(advancedValidation("66611A111"));
