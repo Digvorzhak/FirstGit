@@ -1,21 +1,23 @@
 "use strict";
 
 const steps = (n) => {
-  let x = [];
-  let y = [];
   let arr = [];
-  let hash = "#";
+  let resultArray = [];
   for (let i = 0; i < n; i++) {
     arr[i] = [];
-    for (let j = 0; j < 1; j++) {
-      arr[i][j] = hash + "    ";
+    for (let j = 0; j < n; j++) {
+      if (j > i) {
+        arr[i][j] = " ";
+      } else {
+        arr[i][j] = "#";
+      }
     }
   }
-  return arr;
+  for (let i = 0; i < arr.length; i++) {
+    resultArray[i] = arr[i].join("");
+  }
+
+  return resultArray;
 };
 
-const hi = [["#    "], ["##   "], ["###  "], ["#### "], ["#####"]];
-console.log(hi);
-
-console.log(steps(5));
-console.table(hi);
+console.log(steps(6));
