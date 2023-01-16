@@ -48,7 +48,6 @@ const school = {
       teacher["students"].push(assignedStudent);
       teacher["capacityLeft"]--;
     } else console.log("Sorry, no available teachers left");
-    // school["teachers"].find(person => person)
   },
   assignTeachersSubject: (id, sub) => {
     let teacher = school["teachers"].find((person) => person.id === id);
