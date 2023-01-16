@@ -136,7 +136,7 @@ currencies.forEach(function (value, key, map) {
   console.log(`${key}: ${value}`);
 });
 
-// Set
+// Set - enter anything with length to a set to find out how many unique elements or characters. You can use spread to return the result back from the set.
 
 const currenciesUnique = new Set(["USD", "GBP", "USD", "EUR", "EUR"]);
 console.log(currenciesUnique);
