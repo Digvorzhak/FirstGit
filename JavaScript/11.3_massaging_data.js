@@ -77,7 +77,6 @@ console.log(birthCalc(data));
 const foodCounter = (arr) => {
   let foodHive = {};
   let array = [];
-  let containerArr = [];
 
   for (let i = 0; i < arr.length; i++) {
     array[i] = { ...arr[i].favoriteFoods };

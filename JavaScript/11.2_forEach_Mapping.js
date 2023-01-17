@@ -35,7 +35,7 @@ const showFirstAndLast = (arr) => {
   return resultArray;
 };
 
-const randomArray = [5464654, false, true, "wafrawfawf", null, "asfaesrwetgqwert", "string3", 235234523, "laststring", 5555];
+const randomArray = [5464654, false, true, "wafrawfawf", null, "asfaesrwetgqwert", "string3", 235234523, "AYEFMET", 5555];
 console.log(showFirstAndLast(randomArray));
 
 const vowelCount = (str) => {
