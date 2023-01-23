@@ -18,3 +18,4 @@ const lettersCounter = (array) => {
 const array = ["Hello", "Good Day", "Your Welcome", "hotdog", "hamburgers"];
 
 console.log(lettersCounter(array));
+console.log(

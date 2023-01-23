@@ -10,7 +10,7 @@ function findSmallest(a, b, c) {
   }
 }
 
-console.log(findSmallest(52, 66, 2));
+findSmallest(52, 66, 2);
 
 function findSmallest(a, b, c) {
   if (a < b && a < c) {
@@ -22,4 +22,4 @@ function findSmallest(a, b, c) {
   }
 }
 
-console.log(findSmallest(52, 66, 2));
+findSmallest(52, 66, 2);

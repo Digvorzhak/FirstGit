@@ -18,6 +18,20 @@ const extractOnlyValue = (data, key) => {
 
 console.log(extractOnlyValue(data, "id"));
 
-const countOnlyVowels = (str) => {};
+const countOnlyVowels = (str) => {
+  const strArr = str.split("");
 
-console.log(countOnlyVowels("atghilkveoilaaoigjvnbcERLA"));
+  let result = strArr.reduce((obj, letter) => {
+    if ((letter === "A" || letter === "E" || letter === "I" || letter === "O" || letter === "U" || letter === "a" || letter === "e" || letter === "e" || letter === "i" || letter === "o" || letter === "u") && obj[letter] === undefined) {
+      obj[letter] = 1;
+      console.log(obj);
+    } else if ((letter === "A" || letter === "E" || letter === "I" || letter === "O" || letter === "U" || letter === "a" || letter === "e" || letter === "e" || letter === "i" || letter === "o" || letter === "u") && letter in obj) {
+      obj[letter] += 1;
+    }
+
+    return obj;
+  }, {});
+  return result;
+};
+
+console.log(countOnlyVowels("aAAbBcCeEhHiIoOjJaaakp"));
