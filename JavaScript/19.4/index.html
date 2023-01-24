@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Page</title>
+  </head>
+  <body>
+    <script>
+      const body = document.getElementsByTagName("body")[0];
+      const navbar = document.createElement("navbar");
+
+      const left = document.createElement("div");
+      const logo = document.createElement("div");
+      const world = document.createElement("div");
+      const politics = document.createElement("div");
+      const business = document.createElement("div");
+      const health = document.createElement("div");
+      const more = document.createElement("div");
+      const searchField = document.createElement("input");
+      const right = document.createElement("div");
+      const audio = document.createElement("div");
+      const search = document.createElement("div");
+      const login = document.createElement("div");
+      const navbarItems = [];
+
+      body.appendChild(navbar);
+      body.appendChild(navbar);
+      navbar.appendChild(left);
+      navbar.appendChild(right);
+      left.appendChild(logo);
+      left.appendChild(world);
+      left.appendChild(politics);
+      left.appendChild(business);
+      left.appendChild(health);
+      left.appendChild(more);
+      right.appendChild(audio);
+      right.appendChild(search);
+      right.appendChild(login);
+
+      logo.innerText = "CNN";
+      world.innerText = "World";
+      politics.innerText = "US Politics";
+      business.innerText = "Bussiness";
+      health.innerText = "Health";
+      more.innerText = "More";
+
+      searchField.setAttribute("type", "text");
+
+      audio.innerText = "Audio";
+      search.innerText = "Search";
+      login.innerText = "Log in";
+
+      body.style.boxSizing = "border-box";
+      body.style.fontWeight = "400";
+      body.style.lineHeight = "1.6";
+      body.style.padding = "0px";
+      body.style.margin = "0px";
+
+      navbar.style.fontFamily = "Arial";
+      navbar.style.background = "#0c0c0c";
+      navbar.style.height = "40px";
+      navbar.style.padding = "3px 20px";
+      navbar.style.color = "#ffffff";
+      navbar.style.display = "flex";
+      navbar.style.justifyContent = "space-between";
+      navbar.style.alignItems = "center";
+
+      left.style.display = "flex";
+      left.style.alignItems = "center";
+      left.style.gap = "20px";
+
+      right.style.display = "flex";
+      right.style.gap = "20px";
+
+      searchField.style.display = "flex";
+      searchField.style.flex = "1 1 auto";
+    </script>
+  </body>
+</html>
