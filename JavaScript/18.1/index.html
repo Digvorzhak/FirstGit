@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,
+initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Header</h1>
+    <p>Paragraph</p>
+    <a href="#">link</a>
+    <img src="" alt="" />
+    <div class="x">Div with a class</div>
+    <div id="y">Div with an id</div>
+    <input type="text" />
+    <input type="text" />
+    <input type="text" />
+  </body>
+  <script>
+    // const body = document.getElementsByTagName("body");
+    // console.log(body);
+    // for (const el of body) {
+    //   console.log(el);
+    // }
+    const headerCollection = document.getElementsByTagName("h1");
+    const header = headerCollection[0];
+    console.log(header);
+    const paragraphCollection = document.getElementsByTagName("p");
+    const paragraph = paragraphCollection[0];
+    console.log(paragraph);
+    const linksCollection = document.getElementsByTagName("a");
+    const link = linksCollection[0];
+    console.log(link);
+    const imgCollection = document.getElementsByTagName("img");
+    const img = imgCollection[0];
+    console.log(img);
+    const divWithClass = document.getElementsByClassName("x")[0];
+    console.log(divWithClass);
+    const divWithId = document.getElementById("y");
+    console.log(divWithId);
+    const inputs = document.getElementsByTagName("input");
+    console.log(inputs);
+  </script>
+</html>
