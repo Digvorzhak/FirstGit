@@ -36,7 +36,7 @@
       users.forEach((object, index) => {
         arr[index] = document.createElement("li");
         ul.appendChild(arr[index]);
-        arr[index].textContent = `${object.firstName} ${object.lastName}`;
+        arr[index].innerText = `${object.firstName} ${object.lastName}`;
         arr[index].setAttribute("data-id", `${object.id}`);
       });
       ul.style.listStyle = "none";

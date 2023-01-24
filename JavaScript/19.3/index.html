@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const array = [0, 0, 0, 0, 0, 0];
+      const stringNum = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
+      const inputArray = [];
+      const body = document.getElementsByTagName("body")[0];
+      body.style.width = "100vw";
+      body.style.height = "100vh";
+      body.style.display = "flex";
+      body.style.justifyContent = "center";
+      body.style.alignItems = "center";
+
+      array.forEach((number, index) => {
+        inputArray[index] = document.createElement("input");
+        inputArray[index].setAttribute("type", "number");
+        inputArray[index].setAttribute("maxlength", "1");
+        inputArray[index].style.width = "90px";
+        body.appendChild(inputArray[index]);
+      });
+      console.log(inputArray);
+
+      console.log(inputArray);
+      inputArray.forEach((input, index) => {
+        input.addEventListener("keyup", function () {
+          for (let i = 0; i < stringNum.length; i++) {
+            if (input.value === stringNum[i]) {
+              input.nextElementSibling.focus();
+            }
+          }
+        });
+      });
+      inputArray[0].addEventListener("paste", function (e) {
+        e.preventDefault();
+        if (e.target.type === "number") {
+          let data = e.clipboardData.getData("Text");
+          // split clipboard text into single characters
+          data = data.split("");
+          // find all other text inputs
+          data.forEach.call(document.querySelectorAll("input[type=number]"), (node, index) => {
+            // And set input value to the relative character
+            node.value = data[index];
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
