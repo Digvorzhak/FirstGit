@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        box-sizing: border-box;
+        padding: 0px;
+        margin: 0px;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <p>How many smileys do you want to see?</p>
+      <input class="input" type="text" name="" id="" />
+      <button class="btn">Submit</button>
+      <p class="message"></p>
+    </div>
+    <script>
+      const body = document.querySelector("body");
+      const mainDiv = document.querySelector(".main-container");
+      const btn = document.querySelector(".btn");
+      const input = document.querySelector(".input");
+      const warning = document.querySelector(".message");
+      const smileContainer = document.createElement("div");
+
+      const smileArr = [];
+      btn.addEventListener("click", function () {
+        if (smileArr.length > 1) {
+          for (let i = 0; i < smileArr.length; i++) {}
+          console.log(smileArr.length);
+        }
+        const smileSum = Number(input.value);
+
+        if (!smileSum) {
+          warning.innerText = "Please enter a valid number!";
+        }
+        const smileys = document.querySelectorAll("img");
+        for (let i = 0; i < smileys.length; i++) {
+          smileys[i].remove();
+        }
+        mainDiv.appendChild(smileContainer);
+        smileContainer.style.display = "flex";
+        smileContainer.setAttribute("class", "container");
+        for (let i = 0; i < smileSum; i++) {
+          smileArr[i] = document.createElement("img");
+          smileArr[i].setAttribute("src", "./imges/smiley.png");
+          smileArr[i].style.width = "40px";
+          smileArr[i].style.height = "40px";
+          smileContainer.appendChild(smileArr[i]);
+        }
+      });
+    </script>
+  </body>
+</html>
