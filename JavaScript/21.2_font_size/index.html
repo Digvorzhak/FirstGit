@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button class="btn-plus">+</button>
+    <button class="btn-minus">-</button>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam distinctio facere iste nam culpa non quam, fuga voluptatibus eligendi. Sit ipsa voluptate soluta in enim?</p>
+    <script>
+      const btnIncrease = document.querySelector(".btn-plus");
+      const btnDecrease = document.querySelector(".btn-minus");
+      const paragraph = document.querySelector("p");
+      document.querySelector("html").style.fontSize = "62.5%";
+      let remCounter = 1;
+      let pxCounter = 10;
+      btnIncrease.addEventListener("click", function () {
+        if (remCounter !== 10) {
+          remCounter++;
+          paragraph.style.fontSize = `${remCounter}rem`;
+          if (pxCounter === 6) {
+            pxCounter = 10;
+          }
+          console.log(remCounter);
+          console.log(pxCounter);
+          return;
+        }
+        if (remCounter === 10) {
+          return;
+        }
+        if (pxCounter !== 100) {
+          pxCounter++;
+          paragraph.style.fontSize = `${pxCounter}px`;
+        }
+      });
+      btnDecrease.addEventListener("click", function () {
+        if (remCounter !== 1) {
+          remCounter--;
+          paragraph.style.fontSize = `${remCounter}rem`;
+
+          return;
+        }
+        console.log(remCounter);
+        console.log(pxCounter);
+        if (pxCounter !== 6) {
+          pxCounter--;
+          paragraph.style.fontSize = `${pxCounter}px`;
+        }
+      });
+    </script>
+  </body>
+</html>
