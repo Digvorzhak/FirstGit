@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div><img class="bulb-off" src="./imges/bulb-off.jpg" alt="" /></div>
+    <script>
+      const img = document.querySelector(".bulb-off");
+      let flag = false;
+      img.addEventListener("click", function () {
+        if (!flag) {
+          img.setAttribute("src", "./imges/bulb-on.jpg");
+          flag = true;
+        } else {
+          img.setAttribute("src", "./imges/bulb-off.jpg");
+          flag = false;
+        }
+      });
+    </script>
+  </body>
+</html>
