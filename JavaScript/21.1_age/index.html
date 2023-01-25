@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <button class="btn"></button>
+      <input class="input" type="text" />
+      <p>Check if you can drink!</p>
+    </div>
+    <script>
+      // Create a webpage that has an input field for the user’s age and
+      // a button. If the user enters a number above 18, make the text
+      // “you can drink appear”. If the user enters a number below 18,
+      // make the text “you’re too young” appear.
+      const btn = document.querySelector(".btn");
+      const input = document.querySelector(".input");
+      const paragraph = document.querySelector("p");
+      btn.addEventListener("click", function () {
+        const age = Number(input.value);
+        if ((age < 18) & (age !== 0)) {
+          console.log(age);
+          paragraph.innerText = "You are too young!";
+        } else if (age >= 18) {
+          paragraph.innerText = "You can drink appear";
+        } else {
+          paragraph.innerText = "Please insert a valid number!";
+        }
+      });
+    </script>
+  </body>
+</html>
