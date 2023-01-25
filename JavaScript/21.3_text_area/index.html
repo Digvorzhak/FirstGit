@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .input {
+        height: 100px;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3 class="heading">Why are you interested in this position?</h3>
+    <textarea class="text" name="" id="" cols="30" rows="10"></textarea>
+    <button class="btn">Click Here!</button>
+    <p class="warning"></p>
+    <script>
+      // Create a webpage that has part of the application
+      // process for a job. This page should have a text area
+      // field and a button. Your user must enter at least 100
+      // characters before clicking the button. If he didn’t, please
+      // give him the appropriate message. (using alert is
+      // forbidden)
+      const btn = document.querySelector(".btn");
+      const content = document.querySelector(".text");
+      const warning = document.querySelector(".warning");
+      let characters = [];
+
+      btn.addEventListener("click", function () {
+        characters = content.value.split("");
+        console.log(characters.length);
+        if (characters.length < 100) {
+          console.log(characters.length);
+          warning.innerText = `Please tell us about yourself more! (Minimum 100 characters) ${characters.length}/100`;
+        }
+        if (characters.length >= 100) {
+          warning.innerText = `Thank you! `;
+        }
+      });
+    </script>
+  </body>
+</html>
