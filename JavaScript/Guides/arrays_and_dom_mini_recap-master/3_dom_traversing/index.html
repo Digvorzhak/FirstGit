@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Simple Web Page</title>
+  <style>
+    /* some basic styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* styling for the main container */
+    #main-container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* styling for the header */
+    #header {
+      background-color: #f1f1f1;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    /* styling for the main content */
+    #main-content {
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+
+    #main-content.highlight {
+      background-color: yellow;
+    }
+
+    /* styling for the footer */
+    #footer {
+      background-color: #f1f1f1;
+      padding: 10px;
+      text-align: center;
+    }
+
+    /* styling for the list items */
+    .list-item {
+      margin-bottom: 10px;
+      padding: 10px;
+      background-color: #e9e9e9;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="main-container">
+    <div id="header">
+      <h1>Simple Web Page</h1>
+    </div>
+    <div id="main-content">
+      <p>Welcome to my simple web page!</p>
+      <ul>
+        <li class="list-item">List item 1</li>
+        <li class="list-item">List item 2</li>
+        <li class="list-item">List item 3</li>
+        <li class="list-item">List item 4</li>
+      </ul>
+      <div id="extra-content">
+        <p>Some extra content here</p>
+        <p>Another extra content here</p>
+        <img src="" alt="" id="my-image">
+      </div>
+    </div>
+    <div id="footer">
+      <p id='my-element'>Copyright &copy; 2022 Simple Web Page</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

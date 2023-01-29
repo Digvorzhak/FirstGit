@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>22.1_forms</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .container > input {
+        width: 200px;
+        height: 20px;
+      }
+      .submit-btn {
+        margin-top: 20px;
+        width: 200px;
+        height: 20px;
+      }
+      .hidden {
+        visibility: hidden;
+      }
+      .modal {
+        width: 400px;
+        height: 200px;
+        background: lemonchiffon;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="modal">
+        <h2>Your information:</h2>
+        <p class="name-check"></p>
+        <p class="age-check"></p>
+        <p class="email-check"></p>
+        <p class="message-confirm hidden">Congratulations! You successfully sent this form</p>
+        <button class="confirm-btn">Confirm</button>
+        <button class="change-info-btn">Change information</button>
+      </div>
+      <!-- Text -->
+      <label for="name">Name</label>
+      <input type="text" class="name-input" />
+      <!-- Number -->
+      <label for="age">Age</label>
+      <input type="number" class="age-input" />
+      <!-- Email -->
+      <label for="email">Email</label>
+      <input type="email" name="email" class="email-input" />
+      <!-- Button -->
+      <button class="submit-btn">Submit</button>
+    </div>
+    <script>
+      // Create a webpage that has a form (asks the user for its name,
+      // age, and email address) and when the user clicks submit, open
+      // a text window that writes all the information and asks for his
+      // confirmation. If he clicks on the confirm button, tell him
+      // “congratulations you successfully sent this form” if he clicks on
+      // change information, give him the possibility to change the
+      // information, and ask again for his confirmation.
+      const name = document.querySelector(".name-input");
+      const age = document.querySelector(".age-input");
+      const email = document.querySelector(".email-input");
+      const submit = document.querySelector(".submit-btn");
+      const confirm = document.querySelector(".confirm-btn");
+      const changeInfo = document.querySelector(".change-info-btn");
+      const nameCheck = document.querySelector(".name-check");
+      const ageCheck = document.querySelector(".age-check");
+      const emailCheck = document.querySelector(".email-check");
+      const messageConfirm = document.querySelector(".message-confirm");
+      const modal = document.querySelector(".modal");
+
+      let modalHidden = false;
+
+      const submitInfo = () => {
+        if (modalHidden) {
+          modal.classList.remove("hidden");
+        }
+        nameCheck.innerHTML = name.value;
+        ageCheck.innerHTML = age.value;
+        emailCheck.innerHTML = email.value;
+      };
+
+      const confirmUpdate = () => {
+        if (nameCheck.innerHTML !== "" && ageCheck.innerHTML !== "" && emailCheck.innerHTML !== "") messageConfirm.classList.remove("hidden");
+      };
+
+      const informationChange = () => {
+        modal.classList.add("hidden");
+        modalHidden = true;
+      };
+
+      submit.addEventListener("click", submitInfo);
+      confirm.addEventListener("click", confirmUpdate);
+      changeInfo.addEventListener("click", informationChange);
+    </script>
+  </body>
+</html>

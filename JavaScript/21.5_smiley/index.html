@@ -31,9 +31,8 @@
       const input = document.querySelector(".input");
       const warning = document.querySelector(".message");
       const smileContainer = document.createElement("div");
-
       const smileArr = [];
-      btn.addEventListener("click", function () {
+      const spawnSmile = () => {
         if (smileArr.length > 1) {
           for (let i = 0; i < smileArr.length; i++) {}
           console.log(smileArr.length);
@@ -57,7 +56,9 @@
           smileArr[i].style.height = "40px";
           smileContainer.appendChild(smileArr[i]);
         }
-      });
+      };
+
+      btn.addEventListener("click", spawnSmile);
     </script>
   </body>
 </html>
