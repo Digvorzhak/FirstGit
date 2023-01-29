@@ -1,0 +1,16 @@
+.good-guess {
+  color: green;
+}
+.bad-guess {
+  color: red;
+}
+.hidden {
+  visibility: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+}
