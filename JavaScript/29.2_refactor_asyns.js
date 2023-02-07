@@ -1,6 +1,7 @@
 const jokeTitle = document.querySelector(".joke-title");
 const joke = document.querySelector(".joke");
 const btn = document.querySelector(".btn");
+
 // const countriesContainer = document.querySelector(".countriesContainer");
 
 const jokeToday = async () => {
